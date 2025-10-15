@@ -1,0 +1,164 @@
+body {
+    font-family: 'Georgia', serif; /* Or 'Arial', sans-serif; 'Handwriting' font for more personal touch */
+    background: linear-gradient(to right, #ffccd5, #ffe6ee); /* Soft pink gradient */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 50px; /* Add space for footer */
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive; /* A nice script font */
+    font-size: 3.5em;
+    color: #e75480; /* A lovely rose pink */
+    margin-bottom: 10px;
+}
+
+header .name {
+    color: #ff69b4; /* Hot pink for emphasis */
+}
+
+.subtitle {
+    font-style: italic;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.main-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%; /* Circle image */
+    border: 5px solid #ffb6c1; /* Light pink border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    object-fit: cover; /* Ensures image fills circle without distortion */
+}
+
+.message {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #ff69b4; /* Hot pink button */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e75480; /* Darker pink on hover */
+    transform: translateY(-2px);
+}
+
+.gallery h2, .love-list h2, .video-section h2 {
+    color: #e75480;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+}
+
+.love-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.love-list li {
+    background-color: #fff0f5; /* Lighter pink for list items */
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    color: #555;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 35px; /* Space for heart icon */
+}
+
+.love-list li::before {
+    content: '💖'; /* Heart icon */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+}
+
+.video-section iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+    font-style: italic;
+    margin-top: 15px;
+    color: #777;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Google Fonts - Add these to your HTML head before your style.css link */
+/* <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Georgia&display=swap" rel="stylesheet"> */
+/* For a handwriting style: */
+/* <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet"> */
+/* Then use font-family: 'Caveat', cursive; */
